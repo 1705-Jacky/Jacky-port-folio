@@ -1,0 +1,98 @@
+body{
+  font-family: 'Lato', sans-serif;
+  margin:0;
+  padding:0;
+  line-height: 1.6;
+  color:#333;
+  background-color:  lightgray;;
+}
+.header{
+  position: fixed;
+  top:0;
+  right:0;
+  width:100%;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background-color: #333;
+  color:white;
+  padding:20px 15;
+  text-align: right;
+}
+.logo{
+  color:white;
+  font-size:30px;
+  font-weight: 900;
+}
+
+.header nav ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.header nav ul li{
+  display:inline;
+  margin:0 10px;
+}
+.header nav ul li a{
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.flex-container {
+  display: flex;
+  gap:10px;
+
+}
+.service{
+  width:250px;
+  padding:20px;
+  margin:20px auto;
+  border:2px solid;
+  border-radius: 15px;
+  border-color:#034c53;
+  padding: 10px
+}
+.service-picture{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  
+}
+.service-description{
+  line-height: normal;
+text-align: center;
+text-transform: capitalize;
+
+}
+.profile-button{
+border-radius: 10px;
+cursor:pointer;
+background-color: blue;
+color:white;
+}
+.profile-button:hover{
+background-color:darkslategrey;
+}
+footer{
+   background-color:#5d979c;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding:1px;
+  position: fixed;
+  bottom:0;
+  width:100%;
+  margin: right 2px;
+}
+
+@media(max-width:768px){
+  container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-item{
+    width:90%;
+  }
+}
